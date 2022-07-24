@@ -1,34 +1,23 @@
-.address {
-    &__list {
-        display: flex;
-        flex-direction: column;
-    }
-    &__item {
-        margin-bottom: 9px;
-        &:last-child {
-            margin-bottom: 0;
-            }
-    }
-    &__link {
-        display: inline-block;
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        line-height: 1.71;
-    
-        color: rgba(255, 255, 255, 0.6);
-
-        &--white {
-            color: var(--basic-white);
-            }
-        
-        }
+.address__list {
+  display: flex;
+  flex-direction: column;
 }
 
+.address__item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.address__link {
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
 
+  color: rgba(255, 255, 255, 0.6);
 
-
-
-
-
-
-
+  &--white {
+    color: var(--basic-white);
+  }
+}
