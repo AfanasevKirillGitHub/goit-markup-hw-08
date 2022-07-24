@@ -1,0 +1,22 @@
+.menu__list {
+  display: flex;
+  gap: 50px;
+}
+.menu__link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+  &--current::after {
+    content: ' ';
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+  }
+}

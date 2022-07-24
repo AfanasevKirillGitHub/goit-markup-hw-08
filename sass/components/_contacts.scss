@@ -1,0 +1,14 @@
+.contacts {
+  display: flex;
+  gap: 50px;
+
+  &__link {
+    @extend %flex-center;
+    color: var(--primary-text-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

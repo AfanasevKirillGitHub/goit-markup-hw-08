@@ -1,0 +1,50 @@
+.subscribe {
+    margin-left: 93px;
+}
+.subscribe-form {
+    &__label {
+        display: block;
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        color: var(--basic-white);
+    }
+    &__input {
+        min-height: 50px;
+        width: 358px;
+        padding: 15px 16px;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: transparent;
+        border-radius: 4px;
+        color: var(--basic-white);
+
+        transition: border var(--time-transition) var(--cubic);
+        &:focus-within {
+            border-color: var(--accent-color);
+            }
+}
+
+    &__btn {
+        display: inline-flex;
+        margin-left: 10px;
+        align-items: center;
+}
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+
+        fill: var(--basic-white);
+}
+}
+
+
+
+
+

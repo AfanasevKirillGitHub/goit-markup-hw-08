@@ -1,0 +1,29 @@
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-list__link {
+  @extend %flex-center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  transition: border var(--time-transition) var(--cubic);
+
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.client-list__icon {
+  fill: var(--icon-color);
+  transition: fill var(--time-transition) var(--cubic);
+  // Узнать как правильно сделать вложенность селектора ниже
+  .clients-list__link:hover & {
+    fill: var(--accent-color);
+  }
+}

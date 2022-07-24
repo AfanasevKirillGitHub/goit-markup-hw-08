@@ -1,0 +1,13 @@
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+.header__inner {
+  @extend %flex-center;
+}
+
+.header__menu {
+  margin-left: 93px;
+}
+.header__contacts {
+  margin-left: auto;
+}

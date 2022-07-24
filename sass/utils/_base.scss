@@ -1,0 +1,39 @@
+/* Постоянные переменные на странице */
+body {
+    color: var(--primary-text-color);
+    background: var(--basic-white);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid tomato; */
+}
+
+.section {
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+*:focus-visible {
+    outline: none;
+}
