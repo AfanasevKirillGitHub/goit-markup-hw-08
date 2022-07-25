@@ -1,7 +1,14 @@
-.address__list {
-  display: flex;
-  flex-direction: column;
+.address {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0%;
+  }
 }
+
+// .address__list {
+//   // display: flex;
+//   // flex-direction: column;
+// }
 
 .address__item {
   margin-bottom: 9px;
