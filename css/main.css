@@ -892,6 +892,11 @@ img {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .card-work {
+    width: 370px;
+  }
+}
 .card-work__thumb {
   position: relative;
   overflow: hidden;
@@ -930,6 +935,11 @@ img {
   .card-work__text-overlay {
     padding: 24px 24px;
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .card-work__text-overlay {
+    padding: 49px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
