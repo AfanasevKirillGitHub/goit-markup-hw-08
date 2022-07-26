@@ -1,14 +1,19 @@
 .portfolio-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;   
+    margin-bottom: 40px;
+@media screen and(min-width:768px) {
     justify-content: center;
-    margin-bottom: 50px;
+}
+    // margin-bottom: 40px;
 
-    &__item {
-        margin-right: 8px;
-        &:last-child {
-            margin-right: 0px;
-            }
-        }
+    // &__item {
+    //     margin-right: 8px;
+    //     &:last-child {
+    //         margin-right: 0px;
+    //         }
+    //     }
     &__btn {
         padding-top: 6px;
         padding-bottom: 6px;

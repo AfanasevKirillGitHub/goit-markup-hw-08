@@ -67,16 +67,26 @@
       
     
     &__terms {
-        @extend %flex-center;
-        position: relative;
-        margin-bottom: 30px;
-        margin-left: 14px;
-        line-height: 1.71;
+        position: relative;       
         color: var(--primary-text-color);
+        line-height: 1.17;
+        font-size: 12px;
+
+        @media screen and (min-width:1200px) {
+                line-height: 1.71;
+                margin-left: 14px;
+                font-size: 14px;
+            }
         }
     
     &__terms-link {
         color: var(--accent-color);
+        }
+
+    &__agree {
+        @media screen and (max-width:479px) {
+        text-align: center;
+            }     
         }
 }
 

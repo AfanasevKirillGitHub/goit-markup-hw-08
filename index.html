@@ -169,15 +169,19 @@
         </div>
       </section>
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-members">
             <li class="team-members__card">
               <img
-                src="./images/our-team/igor-demyanenko.jpg"
+                srcset="
+                  ./images/our-team/igor-demyanenko-450.jpg 1x,
+                  ./images/our-team/igor-demyanenko-900.jpg 2x
+                "
+                src="./images/our-team/igor-demyanenko-450.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
+                width="450"
                 height="260"
               />
               <h3 class="team-members__name">Игорь Демьяненко</h3>
@@ -226,9 +230,13 @@
             </li>
             <li class="team-members__card">
               <img
-                src="./images/our-team/olga-repina.jpg"
+                srcset="
+                  ./images/our-team/olga-repina-450.jpg 1x,
+                  ./images/our-team/olga-repina-900.jpg 2x
+                "
+                src="./images/our-team/olga-repina-450.jpg"
                 alt="Ольга Репина"
-                width="270"
+                width="450"
                 height="260"
               />
               <h3 class="team-members__name">Ольга Репина</h3>
@@ -277,9 +285,13 @@
             </li>
             <li class="team-members__card">
               <img
-                src="./images/our-team/nikolay-tarasov.jpg"
+                srcset="
+                  ./images/our-team/nikolay-tarasov-450.jpg 1x,
+                  ./images/our-team/nikolay-tarasov-900.jpg 2x
+                "
+                src="./images/our-team/nikolay-tarasov-450.jpg"
                 alt="Николай Тарасов"
-                width="270"
+                width="450"
                 height="260"
               />
               <h3 class="team-members__name">Николай Тарасов</h3>
@@ -328,9 +340,13 @@
             </li>
             <li class="team-members__card">
               <img
-                src="./images/our-team/mikhail-ermakov.jpg"
+                srcset="
+                  ./images/our-team/mikhail-ermakov-450.jpg 1x,
+                  ./images/our-team/mikhail-ermakov-900.jpg 2x
+                "
+                src="./images/our-team/mikhail-ermakov-450.jpg"
                 alt="Михаил Ермаков"
-                width="270"
+                width="450"
                 height="260"
               />
               <h3 class="team-members__name">Михаил Ермаков</h3>
@@ -379,7 +395,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="clients section">
         <div class="container">
@@ -616,21 +632,22 @@
               id="comment"
               placeholder="Введите текст"
             ></textarea>
-            <label class="main-form__terms" for="terms">
-              <input
-                class="checkbox visually-hidden"
-                type="checkbox"
-                name="user-checkbox"
-                id="terms"
-                required=""
-              />
-              <svg class="checkbox__icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-              Соглашаюсь с рассылкой и принимаю&nbsp;<a class="main-form__terms-link" href="#"
-                >Условия договора</a
-              >
-            </label>
+            <div class="main-form__agree">
+              <label class="main-form__terms" for="terms">
+                <input
+                  class="checkbox visually-hidden"
+                  type="checkbox"
+                  name="user-checkbox"
+                  id="terms"
+                  required=""
+                />
+                <svg class="checkbox__icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use></svg
+                >Соглашаюсь с рассылкой и принимаю&nbsp;<a class="main-form__terms-link" href="#"
+                  >Условия договора</a
+                >
+              </label>
+            </div>
             <button class="btn submit-btn" type="submit">Отправить</button>
           </form>
         </div>
