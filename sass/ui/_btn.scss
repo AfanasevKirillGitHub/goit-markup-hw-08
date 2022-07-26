@@ -33,10 +33,11 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 990;
   @media screen and (min-width: 768px) {
     display: none;
   }
-  z-index: 990;
+
   &:hover .icon-menu-close,
   &:hover .icon-menu-open {
     fill: var(--accent-color);
