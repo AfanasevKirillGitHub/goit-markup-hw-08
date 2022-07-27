@@ -285,6 +285,9 @@ img {
     width: 100%;
   }
 }
+.menu__link--current {
+  color: var(--accent-color);
+}
 
 .footer {
   background-color: var(--bgc-color);
@@ -324,6 +327,16 @@ img {
 
 .info {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .info {
+    margin-bottom: 60px;
+  }
 }
 
 .main-form__field {
@@ -601,10 +614,17 @@ img {
           align-items: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .accede {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .accede {
     margin-left: 70px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .accede__title {
@@ -818,8 +838,13 @@ img {
 @media screen and (min-width: 768px) {
   .contacts__link {
     line-height: 1.14;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
   }
 }
 
@@ -833,6 +858,11 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts__link--size {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link--size {
     font-size: 14px;
   }
 }
@@ -840,20 +870,32 @@ img {
 .contacts__icon {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contacts__icon {
     display: block;
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
   }
 }
-
-.address {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon--size {
+    width: 10px;
+    height: 14px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .address {
-    margin-bottom: 0;
+  .contacts__icon--size {
+    width: 12px;
+    height: 16px;
   }
 }
 
@@ -1040,7 +1082,7 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-section/tablet-banner@2x.jpg");
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1049,7 +1091,7 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-section/desktop-banner.jpg");
   }
 }
-@media screen and (min-width: 960px) and (min-device-pixel-ratio: 2), screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 960px) and (min-resolution: 192dpi), screen and (min-width: 960px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-section/desktop-banner@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-section/desktop-banner@2x.jpg");
@@ -1122,6 +1164,11 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .features__subtitle {
+    text-align: center;
+  }
 }
 
 .features__text {
